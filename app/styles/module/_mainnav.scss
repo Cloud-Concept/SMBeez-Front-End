@@ -165,6 +165,7 @@ color: $white;
   transition: visibility 0s 0.3s;
 }
 .cd-main-nav a, .cd-main-nav input[type="search"] {
+  text-decoration: none;
   display: block;
   @include rem(font-size, $base-font-size);
   text-transform: uppercase;
@@ -244,6 +245,8 @@ Search Form
 .cd-main-search input[type="search"] {
   width: 100%;
   color: $main-blue;
+  text-transform: none;
+
 }
 .cd-main-search input[type="search"]:focus {
   outline: none;
@@ -867,6 +870,23 @@ JavaScript Disabled
   display: none;
 }
 
+
+/* DropDown */
+@media (max-width: 1024px) {
+
+.cd-main-nav-wrapper {
+  .dropdown-menu {
+background: none;
+position: inherit!important;
+width: 100%;
+transform: none!important;
+  }
+  .dropdown-divider {
+    display: none;
+  }
+}
+
+}
 
 /* Custom */
 .quick-links,

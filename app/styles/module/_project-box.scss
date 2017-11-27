@@ -1,7 +1,13 @@
 /* Project Boxes */
 
 .project-box {
+  background:$gray;
+  @include rem(padding,10px 20px 20px);
+  height: 100%;
+}
+
+.project-box-side {
+  background: none;
   border-bottom: 1px solid $gray;
-  @include rem(padding,0 0 20px 0);
-  @include rem(margin,0 0 20px 0);
+
 }
