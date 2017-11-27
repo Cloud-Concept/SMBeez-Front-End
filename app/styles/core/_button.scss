@@ -1,0 +1,66 @@
+button,
+button:active,
+button:focus,
+button:hover,
+.btn,
+.btn:active,
+.btn:focus,
+.btn:hover{
+    outline:none !important;
+    box-shadow: none!important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.btn {
+  position: relative;
+  border-radius: $br01;
+  text-transform: uppercase;
+  text-decoration: none;
+  @include rem(font-size, $base-font-size);
+  @include rem(padding, 10px 30px);
+  @include transition(all .4s ease);
+}
+
+
+
+.btn-blue {
+  background: $main-blue;
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $darkblue;
+    color: $yellow;
+  }
+}
+
+.btn-trans {
+  border: 1px solid #d5d4d4;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $main-blue;
+    color: $white;
+  }
+}
+
+.btn-yellow {
+  color: $yellow;
+}
+
+.btn-yellow-2 {
+  background: $yellow;
+  color: $main-blue;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $darkblue;
+    color: $white;
+  }
+
+}

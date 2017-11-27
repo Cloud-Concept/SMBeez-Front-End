@@ -1,0 +1,22 @@
+/* Box-block Global */
+.box-block {
+  p {
+    font-weight: 300;
+    color: $darkblue;
+
+    &.thumb-title {
+      font-weight: 400;
+      color: $main-blue;
+      @include rem(font-size, $h2-font-size);
+    }
+
+    &.tags {
+      font-style: italic;
+      a {
+        font-weight: 400;
+        color: $main-blue;
+        font-style: normal;
+      }
+    }
+  }
+}

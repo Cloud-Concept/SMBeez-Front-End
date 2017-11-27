@@ -1,0 +1,24 @@
+/* Company Box */
+
+.company-box {
+  > img {
+    width: 100%;
+  }
+}
+
+.company-box-header {
+  > a > i {
+    color: $darkblue;
+  }
+
+  .thumb-review {
+    a {
+      color:  $main-blue;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
