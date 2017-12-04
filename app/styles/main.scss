@@ -43,7 +43,11 @@
 @import 'module/box-block';
 @import 'module/company-box';
 @import 'module/project-box';
+@import 'module/details-box';
+@import 'module/alert';
 @import 'module/star-rating';
+@import 'module/vcard';
+@import 'module/tabs';
 @import 'module/form';
 @import 'module/inline-children';
 @import 'module/media';
@@ -51,6 +55,9 @@
 @import 'module/placeholder';
 @import 'module/reveal';
 
+
+//new Modules required for Inside pages
+@import 'module/filter-list';
 
 // LAYOUT
 // distinct section of an interface
@@ -66,6 +73,7 @@
 // layouts stitched together to form pages
 
 @import 'pages/home';
+@import 'pages/project-listing';
 
 
 // OVERRIDING UTILITIES

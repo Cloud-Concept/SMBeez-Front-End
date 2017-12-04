@@ -1,10 +1,19 @@
 /* Star Rating */
 
 .star-rating {
+  .list-inline-item {
+    margin: 0;
+
+    &.thumb-review {
+      @include rem(margin-left, 10px);
+    }
+  }
   li i {
-    color: #fff;
+    color: $black;
+    opacity: 0.3;
   }
   li.active i {
-    color: #ffe000;
+    color: $yellow;
+    opacity: 1;
   }
 }

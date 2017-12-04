@@ -23,7 +23,13 @@ button:hover,
   @include transition(all .4s ease);
 }
 
+.btn-sm {
+  text-transform: inherit;
+  border-radius: $br01 - 6;
+  @include rem(font-size, $base-font-size);
+  @include rem(padding, 4px 15px);
 
+}
 
 .btn-blue {
   background: $main-blue;

@@ -6,6 +6,7 @@
   }
 }
 
+
 .company-box-header {
   > a > i {
     color: $darkblue;
@@ -21,4 +22,9 @@
       }
     }
   }
+}
+
+.company-box-side {
+  border-bottom: 1px solid $gray;
+
 }

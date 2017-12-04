@@ -1,0 +1,13 @@
+/*
+Tabs Global
+*/
+
+.nav-tabs {
+  position: relative;
+  .nav-link{
+    border-radius: 0;
+    text-decoration: none;
+    color: $main-blue;
+  }
+
+}
