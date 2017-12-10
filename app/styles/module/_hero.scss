@@ -10,6 +10,7 @@ Home Page Hero
   @include rem(padding, 100px 0);
   min-height: 360px;
   background: #fff400 url(../images/hero/hero-bg.jpg) no-repeat center bottom;
+  
   p {
     @include rem(font-size, $h4-font-size);
   }
@@ -114,4 +115,14 @@ Company Details hero
   right: 0;
   bottom: 0;
   background:  url(../images/hero/hero-shadow.png) no-repeat center bottom;
+}
+
+
+/*
+All Project Industries
+*/
+.hero-all {
+  background: url(../images/hero/hero-all.jpg) no-repeat 0 0;
+  background-size: cover;
+
 }

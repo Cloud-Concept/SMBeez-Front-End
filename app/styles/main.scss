@@ -10,6 +10,7 @@
 
 // system-wide styles  and placeholders
 @import 'utility/fonts';
+@import 'utility/modal';
 
 // CORE
 // basic building blocks, typically single html tags
@@ -44,11 +45,15 @@
 @import 'module/company-box';
 @import 'module/project-box';
 @import 'module/details-box';
+@import 'module/all-box';
 @import 'module/alert';
 @import 'module/star-rating';
 @import 'module/vcard';
+@import 'module/review-social';
+@import 'module/company-details-sidebar';
 @import 'module/tabs';
 @import 'module/form';
+@import 'module/search-details';
 @import 'module/inline-children';
 @import 'module/media';
 @import 'module/pagination';
@@ -74,6 +79,7 @@
 
 @import 'pages/home';
 @import 'pages/project-listing';
+@import 'pages/all-projects';
 
 
 // OVERRIDING UTILITIES

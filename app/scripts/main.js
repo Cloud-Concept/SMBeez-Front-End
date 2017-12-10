@@ -93,48 +93,49 @@ jQuery(document).ready(function($){
 
 
   // Scroll Animation
-  window.sr = ScrollReveal();
-    sr.reveal('.home .hero h1', {
-      opacity: 0,
-      distance: '10rem',
-      duration: 2000,
-      scale: 1,
-      origin: 'top'
-    });
-    sr.reveal('.home .hero p', {
-      opacity: 0,
-      duration: 2000,
-      origin: 'top'
-    });
+    if ($('body').hasClass('home')) {
+    window.sr = ScrollReveal({ reset: true });
+      sr.reveal('.home .hero h1', {
+        opacity: 0,
+        distance: '10rem',
+        duration: 2000,
+        scale: 1,
+        origin: 'top'
+      });
+      sr.reveal('.home .hero p', {
+        opacity: 0,
+        duration: 2000,
+        origin: 'top'
+      });
 
-    sr.reveal('.home .btn-hero', {
-      opacity: 0,
-      distance: '10rem',
-      duration: 2000,
-      scale: 1,
-      origin: 'bottom'
-    });
+      sr.reveal('.home .btn-hero', {
+        opacity: 0,
+        distance: '10rem',
+        duration: 2000,
+        scale: 1,
+        origin: 'bottom'
+      });
 
-    sr.reveal('.home .featured-companies h3, .home .featured-projects h3', {
-      opacity: 0,
-      distance: '10rem',
-      duration: 1000,
-      scale: 1,
-      origin: 'bottom'
-    });
-    sr.reveal('.home .sidebar-01, .home .sidebar-02, .home .footer', {
-      opacity: 0,
-      distance: '10rem',
-      duration: 2000,
-      scale: 1,
-      origin: 'bottom'
-    });
-    sr.reveal('.home .company-box, .home .project-box, .home .create-intro', {
-      opacity: 0,
-      distance: '10rem',
-      duration: 1500,
-      scale: 1,
-      origin: 'bottom'
-    });
-
+      sr.reveal('.home .featured-companies h3, .home .featured-projects h3', {
+        opacity: 0,
+        distance: '10rem',
+        duration: 1000,
+        scale: 1,
+        origin: 'bottom'
+      });
+      sr.reveal('.home .sidebar-01, .home .sidebar-02, .home .footer', {
+        opacity: 0,
+        distance: '10rem',
+        duration: 2000,
+        scale: 1,
+        origin: 'bottom'
+      });
+      sr.reveal('.home .company-box, .home .project-box, .home .create-intro', {
+        opacity: 0,
+        distance: '10rem',
+        duration: 1500,
+        scale: 1,
+        origin: 'bottom'
+      });
+  }
 });

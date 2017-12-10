@@ -65,3 +65,23 @@
     }
   }
 }
+
+
+/* Switch Responsive */
+@mixin mqs($mqs) {
+   @if $mqs == xs{
+    @media (max-width: 0) {
+       @content;
+    }
+  }
+  @if $mqs == sm {
+     @media (max-width: 576px){
+      @content;
+    }
+  }
+  @if $mqs == md {
+     @media (max-width: 768px){
+      @content;
+    }
+  }
+}

@@ -26,5 +26,10 @@
 
 .company-box-side {
   border-bottom: 1px solid $gray;
+}
 
+.media-body-info {
+  a {
+    color: $main-blue;
+  }
 }

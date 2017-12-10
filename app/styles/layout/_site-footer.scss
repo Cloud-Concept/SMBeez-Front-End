@@ -23,3 +23,21 @@
     }
   }
 }
+
+.newsletter {
+  .btn {
+    border-radius: 0;
+    height: auto;
+    line-height: 1;
+    @include rem(padding, 0 15px)
+  }
+
+  input {
+    &:focus,
+    &:hover,
+    &:active {
+      outline:none !important;
+      box-shadow: none!important;
+    }
+  }
+}

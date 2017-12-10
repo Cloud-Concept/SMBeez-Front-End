@@ -1,3 +1,98 @@
 /*
 Global OverWrite
 */
+
+.form-control {
+  border: 0;
+  border-radius: 0;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.custom-control {
+  cursor: pointer;
+}
+
+.custom-control-indicator {
+  width: 21px;
+  height: 21px;
+  margin-top: -3px;
+  border:1px solid $offblack;
+  background-color: $white;
+  box-shadow: none;
+  outline: none;
+  &:hover,
+  &:focus,
+  &:active {
+  }
+}
+.custom-control-input:checked ~ .custom-control-indicator {
+  background-color: $offblack;
+}
+
+.custom-control-input:focus ~ .custom-control-indicator,
+.custom-control-input:active ~ .custom-control-indicator,
+.custom-control-input:hover ~ .custom-control-indicator {
+  outline: none !important;
+  box-shadow: none;
+
+
+}
+.custom-control-description {
+  @include rem(margin-left, 10px);
+}
+
+
+/*
+Write Review Form
+*/
+.write-review{
+  .form-group{
+    margin-bottom: 0;
+    margin-top: 1rem;
+
+    &.form-bg  {
+      margin-top: 0;
+    }
+  }
+  label {
+    color: $darkblue;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  h5 {
+    color: $offblack;
+    font-weight: 300;
+    font-size: 16px;
+    @include rem(padding, 0);
+    @include rem(margin-right, 20px);
+  }
+
+  h6 {
+    color: $main-blue;
+    font-weight:300;
+  }
+}
+.form-bg{
+  background: $white;
+  @include rem(padding, 10px 15px);
+
+  label {
+    margin-bottom: 0;
+  }
+
+  .custom-control {
+    font-weight: 300;
+    color: $offblack;
+  }
+  .custom-control + .custom-control {
+    @include rem(margin-left, 50px);
+      @include mqs(sm) {
+        @include rem(margin-left, 0px);
+        @include rem(margin-top, 5px);
+      }
+  }
+}
