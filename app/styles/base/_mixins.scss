@@ -85,3 +85,9 @@
     }
   }
 }
+
+/* rest values for margin and padding */
+@mixin restmp {
+  margin: 0;
+  padding: 0;
+}

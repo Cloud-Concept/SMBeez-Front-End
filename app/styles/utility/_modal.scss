@@ -56,3 +56,18 @@ Modal
     }
   }
 }
+
+/* Express Interest */
+.modal-bg-white {
+  .modal-content {
+    background: $white;
+  }
+}
+
+.gray-title {
+  background: $gray;
+  @include rem(padding, 10px 0);
+  h3 {
+    padding-top: 0;
+  }
+}

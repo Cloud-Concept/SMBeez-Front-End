@@ -1,5 +1,5 @@
 // Roboto Front:
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800');
 //font-family: 'Roboto', sans-serif;
 
 // Nunito Front:
@@ -31,11 +31,8 @@ h3 {
   @include rem(font-size, $h3-font-size);
   font-weight: 700;
   text-transform: uppercase;
-
   // to fix Aligmenet with Btn
-
   @include rem(padding-top, 20px);
-
   // for btn beside H3 Title
   > .btn {
     @include rem(margin-top, 20px);
@@ -43,14 +40,41 @@ h3 {
     @include mq(sm){
       @include rem(margin-top, -12px);
     }
-
   }
 }
 
+h4 {
+  color: $darkblue;
+  @include rem(font-size, $h3-font-size);
+  font-weight: 500;
+  @include rem(padding, 20px 0 10px);
+
+  a {
+    font-size: $base-font-size;
+    color: $main-blue;
+  }
+}
+h5 {
+  @include rem(font-size, $h5-font-size);
+  font-weight: 600;
+
+  &.title-blue {
+    color: $yellow;
+    background: $main-blue;
+    @include rem(padding, 15px);
+
+    a {
+      float: right;
+      font-weight: 400;
+      color: $yellow;
+      @include rem(font-size, $base-font-size);
+    }
+  }
+}
 h6 {
   font-family: $fontnu;
   color: $main-blue;
-  font-size: $g-font-size;
+  @include rem(font-size, $g-font-size);
   font-weight: 800;
   @include rem(padding, 20px 0 0 0);
 }
