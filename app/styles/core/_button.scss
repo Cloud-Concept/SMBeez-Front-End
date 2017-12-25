@@ -87,18 +87,48 @@ button:hover,
 .btn-yellow-2 {
   background: $yellow;
   color: $main-blue;
-
   &:hover,
   &:focus,
   &:active {
     background: $darkblue;
     color: $white;
   }
-
 }
 
 .btn-list {
   .btn-sm {
     @include rem(padding, 4px 30px);
+  }
+}
+
+.btn-lk {
+  background: #3333af;
+  color: $white;
+  text-transform: capitalize;
+  font-size: $base-font-size;
+  i {
+    @include rem(padding-right, 5px);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background: $darkblue;
+    color: $white;
+  }
+}
+
+.btn-fb {
+  background: #4141e5;
+  color: $white;
+  text-transform: capitalize;
+  font-size: $base-font-size;
+  i {
+    @include rem(padding-right, 5px);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background: $darkblue;
+    color: $white;
   }
 }

@@ -58,3 +58,21 @@ DashBoard main sidebar
     margin-bottom: 0;
   }
 }
+
+/* sidebar subscription */
+.sidebar-subscription {
+  h4 {
+    padding-top: 0;
+  }
+
+  .border-b {
+    border-bottom: 2px solid $darkgray;
+    @include rem(margin-bottom, 10px);
+  }
+}
+
+/* sidebar my Company */
+
+.sidebar-mycompany  {
+  @extend .sidebar-subscription;
+}
