@@ -881,6 +881,7 @@ JavaScript Disabled
     background: none;
     position: inherit!important;
     width: 100%;
+    margin: 0;
     transform: none!important;
   }
   .dropdown-divider {
@@ -903,18 +904,17 @@ JavaScript Disabled
 
 /* Flags */
 .flags-dropdown {
-  .dropdown-menu {
-    max-width: 3rem;
+  .dropdown-menu{
+    min-width: 3rem;
     @media (max-width: 1024px) {
-      max-width: inherit;
-    }
+      min-width: inherit;
 
+    }
     &.show {
     left: 5px!important;
-    @media (max-width: 1024px) {
-      left: 0!important;
-    }
-
+      @media (max-width: 1024px) {
+        left: 0!important;
+      }
     }
   }
 }
