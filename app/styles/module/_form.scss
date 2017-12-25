@@ -2,9 +2,18 @@
 Global OverWrite
 */
 
+
+
 .form-control {
   border: 0;
   border-radius: 0;
+  //@include rem(padding, 10px 20px);
+}
+
+.form-guide {
+  font-weight: 300;
+  font-size: $base-font-size - 2;
+  color: $offblack;
 }
 
 textarea {
@@ -95,4 +104,46 @@ Write Review Form
         @include rem(margin-top, 5px);
       }
   }
+}
+
+
+/*
+Sign up Form
+*/
+.modal-singup {
+  .form-control {
+    border-radius: 3px;
+    border: 1px solid $darkgray;
+    color: $offblack;
+
+    &.custom-select{
+      color: $offblack;
+    }
+  }
+}
+
+/*
+Add Company
+*/
+.modal-add-company {
+  .form-control{
+    @include rem(padding, 10px 20px);
+  }
+  select.form-control:not([size]):not([multiple]) {
+    outline: none;
+    height: calc(2.25rem + 9px);
+    padding-left: 5px;
+  }
+  .custom-file {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/*
+Add Project
+*/
+.modal-add-project {
+  @extend .modal-add-company;
 }

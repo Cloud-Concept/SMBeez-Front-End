@@ -876,10 +876,12 @@ JavaScript Disabled
 
 .cd-main-nav-wrapper {
   .dropdown-menu {
-background: none;
-position: inherit!important;
-width: 100%;
-transform: none!important;
+    border: 0;
+    padding: 0;
+    background: none;
+    position: inherit!important;
+    width: 100%;
+    transform: none!important;
   }
   .dropdown-divider {
     display: none;
@@ -895,5 +897,24 @@ transform: none!important;
     margin: 0;
     padding: 0;
     list-style: none
+  }
+}
+
+
+/* Flags */
+.flags-dropdown {
+  .dropdown-menu {
+    max-width: 3rem;
+    @media (max-width: 1024px) {
+      max-width: inherit;
+    }
+
+    &.show {
+    left: 5px!important;
+    @media (max-width: 1024px) {
+      left: 0!important;
+    }
+
+    }
   }
 }
