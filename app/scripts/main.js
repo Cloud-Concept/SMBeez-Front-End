@@ -91,6 +91,11 @@ jQuery(document).ready(function($){
 	});
 
 
+  // Star Rating
+  $('.star-rating-fn').barrating({
+    theme: 'fontawesome-stars'
+  });
+
 
   // Scroll Animation
     if ($('body').hasClass('home')) {

@@ -1,5 +1,6 @@
 /* Star Rating */
 
+@import '/bower_components/jquery-bar-rating/dist/themes/fontawesome-stars.css';
 .star-rating {
   .list-inline-item {
     margin: 0;
@@ -8,12 +9,16 @@
       @include rem(margin-left, 10px);
     }
   }
-  li i {
+  .br-widget a {
+    font-size: 14px;
     color: $black;
-    opacity: 0.3;
-  }
-  li.active i {
-    color: $yellow;
-    opacity: 1;
+    opacity: 0.8;
+
+    &:hover,
+    &.br-active:after,
+    &.br-selected:after {
+      color: $yellow;
+      opacity: 1;
+    }
   }
 }

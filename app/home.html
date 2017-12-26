@@ -12,7 +12,6 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
-    <link rel="stylesheet" href="/bower_components/flag-icon-css/css/flag-icon.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -37,7 +36,6 @@
   		<nav class="cd-main-nav-wrapper">
   			<a href="#search" class="cd-search-trigger"></a>
   			<ul class="cd-main-nav">
-  				<li><a href="#">About</a></li>
   				<li><a href="#">Companies</a></li>
   				<li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
@@ -129,11 +127,15 @@
                       <p class="thumb-title mt-1 mb-1">A Good Autoresponder</p>
                       <div class="star-rating">
                         <ul class="list-inline">
-                          <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                          <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                          <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                          <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                          <li class="list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                          <li class="list-inline-item">
+                            <select class="star-rating-fn">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                          </li>
                           <li class="list-inline-item thumb-review"><a href="">(35 Reviews)</a></li>
                         </ul>
                       </div>
@@ -154,11 +156,15 @@
                       <p class="thumb-title mt-1 mb-1">A Good Autoresponder</p>
                       <div class="star-rating">
                         <ul class="list-inline">
-                          <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                          <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                          <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                          <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
-                          <li class="list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                          <li class="list-inline-item">
+                            <select class="star-rating-fn">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                          </li>
                           <li class="list-inline-item thumb-review"><a href="">(35 Reviews)</a></li>
                         </ul>
                       </div>
@@ -284,10 +290,10 @@
                     <a class="btn btn-lk mr-3" href=""> <i class="fa fa-linkedin" aria-hidden="true"></i> Sign Up With Linkedin</a>
                     <a class="btn btn-fb mr-3"  href=""><i class="fa fa-facebook" aria-hidden="true"></i> Sign Up With Facebook</a>
                   </div>
-                  <div class="line-border text-center col-md-3 mr-auto mt-5 mb-3">
+                  <div class="line-border text-center col-md-3 mrt-auto mt-5 mb-3">
                     <span>Or Sign in to your account</span>
                   </div>
-                  <div class="col-md-6 mr-auto">
+                  <div class="col-md-6 mrt-auto">
                   <form action="" class="form-signin mb-4">
                     <div class="row">
                       <div class="col">
@@ -544,6 +550,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/scrollreveal/dist/scrollreveal.js"></script>
+    <script src="/bower_components/jquery-bar-rating/jquery.barrating.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
