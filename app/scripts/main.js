@@ -96,6 +96,21 @@ jQuery(document).ready(function($){
     theme: 'fontawesome-stars'
   });
 
+  // Star Rating ReadOnly
+  $('.star-rating-ro').barrating({
+    readonly: true,
+    hoverState: false,
+    theme: 'fontawesome-stars'
+  });
+
+
+
+  // Infinite Scroller
+  var infinite = new Waypoint.Infinite({
+    element: $('.infinite-container')[0]
+  });
+
+
 
   // Scroll Animation
     if ($('body').hasClass('home')) {
