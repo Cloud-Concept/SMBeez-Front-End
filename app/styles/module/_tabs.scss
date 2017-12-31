@@ -12,13 +12,12 @@ Tabs Global
 
 }
 
-
 /* Tabs Case for Responsive */
 
 @include mqs(md) {
-.list-project{
-  .nav .btn{
-    @include rem(margin, 10px 0)
+  .list-project{
+    .nav .btn{
+      @include rem(margin, 10px 0)
+    }
   }
-}
 }
