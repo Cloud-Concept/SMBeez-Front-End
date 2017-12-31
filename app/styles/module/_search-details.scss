@@ -39,5 +39,27 @@ Search Details
 }
 
 /*
-Search Details Company
+Search Page
 */
+
+// tabs
+.list-group {
+  a {
+    position: relative;
+    width: 100%;
+    display: block;
+
+    &.active {
+      color: $darkblue;
+
+      &:before {
+        position: absolute;
+        right: 0;
+        font-family: FontAwesome;
+        content: "\f054";
+        font-size: 16px;
+        color: $darkblue;
+      }
+    }
+  }
+}
