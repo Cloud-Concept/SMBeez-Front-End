@@ -111,7 +111,7 @@ Write Review Form
 Sign up Form
 */
 .sign-block,
-.modal-singup {
+.modal-signup{
   .form-control {
     border-radius: 3px;
     border: 1px solid $darkgray;
@@ -147,4 +147,17 @@ Add Project
 */
 .modal-add-project {
   @extend .modal-add-company;
+}
+
+
+/*
+Custom File Name
+*/
+
+.custom-file-control:lang(en):empty::after{
+  content: attr(data-label);
+}
+
+.custom-file-control.selected:lang(en):after {
+  content: "" !important;
 }
