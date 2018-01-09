@@ -1,7 +1,7 @@
 
 .footer {
   background: $gray;
-  @include rem(padding, 25px 15px 10px);
+  @include rem(padding, 25px 0 10px);
 
   a {
     color: $main-blue;

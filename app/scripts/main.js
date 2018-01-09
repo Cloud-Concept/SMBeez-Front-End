@@ -105,11 +105,15 @@ jQuery(document).ready(function($){
 
 
 
-  // Infinite Scroller
-  var infinite = new Waypoint.Infinite({
-    element: $('.infinite-container')[0]
-  });
 
+
+
+
+  // input files
+  
+  $('.custom-file-input').on('change',function(){
+    $(this).next().after().text($(this).val().split('\\').slice(-1)[0])
+  })
 
 
   // Scroll Animation

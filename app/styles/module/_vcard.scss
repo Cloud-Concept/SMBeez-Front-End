@@ -27,5 +27,7 @@ vCard Company Details
 */
 
 .vcard-company{
-
+  h4 {
+    border-bottom: 1px solid $gray;
+  }
 }

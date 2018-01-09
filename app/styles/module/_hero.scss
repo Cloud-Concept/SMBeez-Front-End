@@ -10,7 +10,12 @@ Home Page Hero
   @include rem(padding, 100px 0);
   min-height: 360px;
   background: #fff400 url(../images/hero/hero-bg.jpg) no-repeat center bottom;
-  
+  background-size: contain;
+
+  &.about-hero {
+    min-height: 240px;
+  }
+
   p {
     @include rem(font-size, $h4-font-size);
   }
