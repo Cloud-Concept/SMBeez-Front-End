@@ -32,36 +32,16 @@
 
     <header class="cd-main-header animate-search">
   		<div class="cd-logo"><a href="#"><img src="images/common/logo.svg" alt="Logo"></a></div>
-
   		<nav class="cd-main-nav-wrapper">
   			<a href="#search" class="cd-search-trigger"></a>
   			<ul class="cd-main-nav">
   				<li><a href="#">Companies</a></li>
-  				<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Project List#1</a>
-              <a class="dropdown-item" href="#">Project List#2</a>
-              <a class="dropdown-item" href="#">Project List#3</a>
-              <a class="dropdown-item" href="#">Project List#4</a>
-              <a class="dropdown-item" href="#">Project List#5</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Project List#4</a>
-              <a class="dropdown-item" href="#">Project List#5</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown flags-dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="flag-icon flag-icon-ae"></span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-              <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-eg"></span></a>
-              <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-sa"></span></a>
-              <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-kw"></span></a>
-            </div>
+  				<li><a href="#" >Projects</a></li>
+          <li>
+            <a href=""><span class="flag-icon flag-icon-ae"></span> Dubai</a>
           </li>
 
-  				<li><a href="#" data-toggle="modal" data-target="#signup" >Sign in</a></li>
+  				<li><a href="#">Sign in</a></li>
   			</ul> <!-- .cd-main-nav -->
   		</nav> <!-- .cd-main-nav-wrapper -->
   		<a href="#" class="cd-nav-trigger cd-text-replace">Menu<span></span></a>
@@ -76,10 +56,10 @@
             <div class="sign-block">
           <ul class="nav nav-tabs nav-fill" id="tabs-signup" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="Sign In" aria-selected="true">Sign In</a>
+              <a class="nav-link active" id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="Sign In" aria-selected="true"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="create-account-tab" data-toggle="tab" href="#create-account" role="tab" aria-controls="Create Account" aria-selected="false">Create new account  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              <a class="nav-link" id="create-account-tab" data-toggle="tab" href="#create-account" role="tab" aria-controls="Create Account" aria-selected="false"><i class="fa fa-user-o" aria-hidden="true"></i> Create new account</a>
             </li>
           </ul>
           <div class="tab-content py-5 px-4" id="tabs-content-signup">
@@ -95,7 +75,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <form action="" class="form-signin my-4">
+                  <form action="" class="form-signin my-2">
                       <div class="form-group">
                         <input type="text" class="form-control" placeholder="Username / Email">
                       </div>
@@ -406,62 +386,12 @@
     </footer>
 
 
-  	<div id="search" class="cd-main-search">
-  		<form>
-  			<input type="search" placeholder="Search...">
-
-  			<div class="cd-select">
-  				<span class="small-text">in</span>
-  				<select name="select-category">
-  					<option value="all-categories">all Categories</option>
-  					<option value="category1">Category 1</option>
-  					<option value="category2">Category 2</option>
-  					<option value="category3">Category 3</option>
-  				</select>
-  				<span class="selected-value">all Categories</span>
-  			</div>
-  		</form>
-
-  		<div class="cd-search-suggestions">
-  			<div class="news">
-  				<h3>News</h3>
-  				<ul>
-  					<li>
-  						<a class="image-wrapper" href="#"><img src="images/media/placeholder.png" alt="News image"></a>
-  						<h4><a class="cd-nowrap" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-  						<time datetime="2016-01-12">Feb 03, 2016</time>
-  					</li>
-
-  					<li>
-  						<a class="image-wrapper" href="#"><img src="images/media/placeholder.png" alt="News image"></a>
-  						<h4><a class="cd-nowrap" href="#">Incidunt voluptatem adipisci voluptates fugit beatae culpa eum, distinctio, assumenda est ad</a></h4>
-  						<time datetime="2016-01-12">Jan 28, 2016</time>
-  					</li>
-
-  					<li>
-  						<a class="image-wrapper" href="#"><img src="images/media/placeholder.png" alt="News image"></a>
-  						<h4><a class="cd-nowrap" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, esse.</a></h4>
-  						<time datetime="2016-01-12">Jan 12, 2016</time>
-  					</li>
-  				</ul>
-  			</div> <!-- .news -->
-
-  			<div class="quick-links">
-  				<h3>Quick Links</h3>
-  				<ul>
-  					<li><a href="#">Find a store</a></li>
-  					<li><a href="#">Accessories</a></li>
-  					<li><a href="#">Warranty info</a></li>
-  					<li><a href="#">Support</a></li>
-  					<li><a href="#">Contact us</a></li>
-  				</ul>
-  			</div> <!-- .quick-links -->
-  		</div> <!-- .cd-search-suggestions -->
-
-  		<a href="#" class="close cd-text-replace">Close Form</a>
-  	</div> <!-- .cd-main-search -->
-
-  	<div class="cd-cover-layer"></div> <!-- cover main content when search form is open -->
+    <div id="search" class="cd-main-search">
+      <form>
+        <input type="search" placeholder="Search...">
+      </form>
+      <a href="#" class="close cd-text-replace">Close Form</a>
+    </div> <!-- .cd-main-search -->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
