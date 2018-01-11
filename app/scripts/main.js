@@ -110,10 +110,18 @@ jQuery(document).ready(function($){
 
 
   // input files
-  
+
   $('.custom-file-input').on('change',function(){
     $(this).next().after().text($(this).val().split('\\').slice(-1)[0])
   })
+
+
+  // Select Tabs fn
+
+  $('.radio-link.active').find('.custom-control-input').prop('checked', true);
+  $('.radio-link').click(function(){
+    $(this).find('.custom-control-input').prop('checked', true);
+  });
 
 
   // Scroll Animation
