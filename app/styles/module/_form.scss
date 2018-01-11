@@ -166,4 +166,7 @@ Custom File Name
 /* case to fix write-review */
 .casepushup {
   margin-top: -90px;
+  @include mqs(md) {
+    margin-top: 0;
+  }
 }
