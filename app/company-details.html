@@ -39,11 +39,11 @@
         <ul class="cd-main-nav">
           <li><a href="#">Companies</a></li>
           <li><a href="#" >Projects</a></li>
-          <li>
+          <li class="no-effect">
             <a href=""><span class="flag-icon flag-icon-ae"></span> Dubai</a>
           </li>
 
-          <li><a href="#">Sign in</a></li>
+          <li class="btn-menu"><a href="#">Sign in</a></li>
         </ul> <!-- .cd-main-nav -->
       </nav> <!-- .cd-main-nav-wrapper -->
       <a href="#" class="cd-nav-trigger cd-text-replace">Menu<span></span></a>
@@ -767,119 +767,273 @@
           <form action="" class="write-review">
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">What is your relation to company</label>
-                </div>
-                <div class="form-group form-bg">
-                  <label class="custom-control custom-radio">
-                    <input id="radio1" name="radio" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">I am a Customer</span>
-                  </label>
-                  <label class="custom-control custom-radio">
-                    <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">I am A Supplier</span>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Question</label>
-                </div>
-                <div class="form-group form-bg">
-                  <label class="custom-control custom-radio">
-                <input id="radio11" name="radio1" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">Yes</span>
-              </label>
-                  <label class="custom-control custom-radio">
-                <input id="radio21" name="radio1" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">No</span>
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label for="message-text" class="col-form-label">Message:</label>
-                  <textarea class="form-control" id="message-text" placeholder="Write your text here..."></textarea>
-                </div>
+                    <div class="col-md-6">
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">What is your relation to company</label>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="message-text" class="col-form-label">How would you rate "Cloud Concept"</label>
-                  <div class="d-flex mt-4">
-                    <h5>Overall Raiting</h5>
-                    <div class="star-rating">
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <select class="star-rating-fn">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select>
-                        </li>                      </ul>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <h5>Overall Raiting</h5>
-                    <div class="star-rating">
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <select class="star-rating-fn">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select>
-                        </li>                      </ul>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <h5>Overall Raiting</h5>
-                    <div class="star-rating">
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <select class="star-rating-fn">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select>
-                        </li>                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="message-text" class="col-form-label">How would you like the public to preview your review</label>
-                  <label class="custom-control custom-radio">
-                <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">Display my Name & Company to Public</span>
-              </label>
-              <br />
-                  <label class="custom-control custom-radio">
-                <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">Stay Anonymous</span>
-              </label>
-                </div>
-                <div class="form-group">
-                  <h6>Your review will be saved, but it won't be published until you complete your profile.</h6>
-                </div>
 
-                <div class="form-group">
-                  <label for="message-text" class="col-form-label">insert you E-mail to complete your Profile and save your review</label>
-                  <input type="text" class="form-control" placeholder="E-mail">
-                </div>
-
-                <div class="form-group">
-                  <button type="button" class="btn btn-blue btn-yellow text-capitalize"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Submit Review</button>
-                </div>
+              <div class="form-group form-bg">
+                <ul class="nav radio-tabs" role="tablist">
+                  <li>
+                    <a class="active radio-link" id="form1-tab" data-toggle="tab" href="#form1" role="tab" aria-controls="form1" aria-selected="true">
+                      <label class="custom-control custom-radio">
+                        <input id="radio1-test" name="radioselect" type="radio" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">I am a Customer</span>
+                      </label>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="radio-link" id="form2-tab" data-toggle="tab" href="#form2" role="tab" aria-controls="form2" aria-selected="false">
+                      <label class="custom-control custom-radio">
+                        <input id="radio2-test" name="radioselect" type="radio" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">I am A Supplier</span>
+                      </label>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
+
+          </div>
+
+              <div class="tab-content" id="formTabs">
+
+                <div class="tab-pane fade show active" id="form1" role="tabpanel" aria-labelledby="form1-tab">
+
+
+                  <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Question</label>
+                                  </div>
+                                  <div class="form-group form-bg">
+                                    <label class="custom-control custom-radio">
+                                      <input id="radio11" name="radio1" type="radio" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description">Yes</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                    <input id="radio21" name="radio1" type="radio" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description">No</span>
+                                    </label>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text" placeholder="Write your text here..."></textarea>
+                                  </div>
+                                </div>
+
+
+
+
+                                <div class="col-md-6 casepushup">
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">How would you rate "Cloud Concept"</label>
+                                    <div class="d-flex mt-4">
+                                      <h5>Overall Raiting</h5>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <select class="star-rating-fn">
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                            </select>
+                                          </li>                      </ul>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex">
+                                      <h5>Overall Raiting</h5>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <select class="star-rating-fn">
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                            </select>
+                                          </li>                      </ul>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex">
+                                      <h5>Overall Raiting</h5>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <select class="star-rating-fn">
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                            </select>
+                                          </li>                      </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">How would you like the public to preview your review</label>
+                                    <label class="custom-control custom-radio">
+                                      <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description">Display my Name & Company to Public</span>
+                                    </label>
+                                <br />
+                                    <label class="custom-control custom-radio">
+                                      <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description">Stay Anonymous</span>
+                                    </label>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <h6>Your review will be saved, but it won't be published until you complete your profile.</h6>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">insert you E-mail to complete your Profile and save your review</label>
+                                    <input type="text" class="form-control" placeholder="E-mail">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <button type="button" class="btn btn-blue btn-yellow text-capitalize"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Submit Review</button>
+                                  </div>
+                                </div>
+
+
+
+
+
+              </div>  </div>
+                <div class="tab-pane fade" id="form2" role="tabpanel" aria-labelledby="form2-tab">
+                  <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Second</label>
+                                  </div>
+                                  <div class="form-group form-bg">
+                                    <label class="custom-control custom-radio">
+                                      <input id="radio11" name="radio1" type="radio" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description">Yes</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                    <input id="radio21" name="radio1" type="radio" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description">No</span>
+                                    </label>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text" placeholder="Write your text here..."></textarea>
+                                  </div>
+                                </div>
+
+
+
+
+                                <div class="col-md-6 casepushup">
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">How would you rate "Cloud Concept"</label>
+                                    <div class="d-flex mt-4">
+                                      <h5>Overall Raiting</h5>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <select class="star-rating-fn">
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                            </select>
+                                          </li>                      </ul>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex">
+                                      <h5>Overall Raiting</h5>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <select class="star-rating-fn">
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                            </select>
+                                          </li>                      </ul>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex">
+                                      <h5>Overall Raiting</h5>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <select class="star-rating-fn">
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                            </select>
+                                          </li>                      </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">How would you like the public to preview your review</label>
+                                    <label class="custom-control custom-radio">
+                                      <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description">Display my Name & Company to Public</span>
+                                    </label>
+                                <br />
+                                    <label class="custom-control custom-radio">
+                                      <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description">Stay Anonymous</span>
+                                    </label>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <h6>Your review will be saved, but it won't be published until you complete your profile.</h6>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="message-text" class="col-form-label">insert you E-mail to complete your Profile and save your review</label>
+                                    <input type="text" class="form-control" placeholder="E-mail">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <button type="button" class="btn btn-blue btn-yellow text-capitalize"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Submit Review</button>
+                                  </div>
+                                </div>
+
+
+
+
+
+              </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+              <!--- end form --->
+
+
+
+
+
           </div>
           </form>
         </div>
