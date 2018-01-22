@@ -125,13 +125,62 @@ jQuery(document).ready(function($){
 
 
   // Select Yes or No case
-    $('.radio-cases').find('.radio-yes-case').click(function(){
-      $(this).parents('.radio-cases').find('.no-case-info').hide();
-      $(this).parents('.radio-cases').find('.yes-case-info').show();
+
+    //level 1
+    $('#first-level > .case-01  > .radio-yes-case').click(function(){
+      $('#second-level > .no-case-info').hide();
+      $('#third-level > .no-case-info , #third-level > .yes-case-info').hide();
+      $('#four-level > .no-case-info , #four-level > .yes-case-info').hide();
+      $('#five-level > .no-case-info , #five-level > .yes-case-info').hide();
+      $('#second-level > .yes-case-info').show();
     });
-    $('.radio-cases').find('.radio-no-case').click(function(){
-      $(this).parents('.radio-cases').find('.yes-case-info').hide();
-      $(this).parents('.radio-cases').find('.no-case-info').show();
+    $('#first-level > .case-01 > .radio-no-case').click(function(){
+      $('#second-level > .no-case-info').show();
+      $('#second-level > .yes-case-info').hide();
+      $('#third-level > .no-case-info , #third-level > .yes-case-info').hide();
+      $('#four-level > .no-case-info , #four-level > .yes-case-info').hide();
+      $('#five-level > .no-case-info , #five-level > .yes-case-info').hide();
+
+    });
+
+
+    //level 2
+    $('#second-level  .case-02  > .radio-yes-case').click(function(){
+      $('#third-level > .no-case-info').hide();
+      $('#third-level > .yes-case-info').show();
+      $('#four-level > .no-case-info , #four-level > .yes-case-info').hide();
+      $('#five-level > .no-case-info , #five-level > .yes-case-info').hide();
+
+    });
+    $('#second-level  .case-02 > .radio-no-case').click(function(){
+      $('#third-level > .no-case-info').show();
+      $('#third-level > .yes-case-info').hide();
+      $('#four-level > .no-case-info , #four-level > .yes-case-info').hide();
+      $('#five-level > .no-case-info , #five-level > .yes-case-info').hide();
+
+    });
+
+    //level 3
+    $('#third-level  .case-03  > .radio-yes-case').click(function(){
+      $('#four-level > .no-case-info').hide();
+      $('#four-level > .yes-case-info').show();
+      $('#five-level > .no-case-info , #five-level > .yes-case-info').hide();
+
+    });
+    $('#third-level  .case-03 > .radio-no-case').click(function(){
+      $('#four-level > .no-case-info').show();
+      $('#four-level > .yes-case-info').hide();
+      $('#five-level > .no-case-info , #five-level > .yes-case-info').hide();
+    });
+
+    //level 4
+    $('#four-level  .case-04  > .radio-yes-case').click(function(){
+      $('#five-level > .no-case-info').hide();
+      $('#five-level > .yes-case-info').show();
+    });
+    $('#four-level  .case-04 > .radio-no-case').click(function(){
+      $('#five-level > .no-case-info').show();
+      $('#five-level > .yes-case-info').hide();
     });
 
   // Scroll Animation
