@@ -176,3 +176,27 @@ Custom File Name
 .no-case-info {
   display: none;
 }
+
+
+/* User Setting Forms */
+.user-setting {
+  label {
+    font-weight: bold;
+    color: $main-blue;
+  }
+
+  .form-control {
+    background-color: $gray;
+    width: calc(100% - 50px);
+  }
+
+  .edit-form {
+    @include rem(margin-left, 10px);
+    @include rem(margin-top, 3px);
+  }
+
+  .custom-control-description{
+    font-weight: normal;
+    color: $deepgray;
+  }
+}
