@@ -117,6 +117,10 @@ Sign up Form
     border: 1px solid $darkgray;
     color: $offblack;
 
+    &.custom-file {
+      border: 0;
+    }
+
     &.custom-select{
       color: $offblack;
     }
