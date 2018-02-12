@@ -1,0 +1,382 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMBeez : Settings Import Google Contacts</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <script src="https://use.fontawesome.com/7305a65f5a.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body class="no-hero">
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="cd-main-header animate-search">
+      <div class="cd-logo"><a href="#"><img src="images/common/logo.svg" alt="Logo"></a></div>
+
+      <nav class="cd-main-nav-wrapper">
+        <a href="#search" class="cd-search-trigger"></a>
+        <ul class="cd-main-nav">
+          <li><a href="#">Companies</a></li>
+          <li><a href="#">Projects</a></li>
+          <li class="no-effect">
+            <a href="#"><span class="flag-icon flag-icon-ae"></span> Dubai</a>
+          </li>
+          <li class="nav-item dropdown usernav">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/media/user.jpg" alt="UserName"></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+        </ul> <!-- .cd-main-nav -->
+      </nav> <!-- .cd-main-nav-wrapper -->
+      <a href="#" class="cd-nav-trigger cd-text-replace">Menu<span></span></a>
+    </header>
+
+    <nav class="dashboard-nav navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent2">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="">Published projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Projects applied</a></li>
+        <li class="nav-item"><a class="nav-link" href="">My company</a></li>
+        <li class="nav-item"><a class="nav-link" href="">bookmarks</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Settings</a></li>
+      </ul>
+    </div>
+    </nav>
+
+  	<main class="cd-main-content">
+  		<!-- your content here -->
+      <section class="dashboard">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="sidebar-dashboard mb-5">
+                <ul class="dash-info">
+                  <li>
+                    <i class="fa fa-cubes fa-2x pull-left mr-3" aria-hidden="true"></i>
+                      <div class="pull-right">
+                      <p class="numb">1,450</p>
+                      <p><i><b>Honeycombs</b></i> Earned</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="sidebar-dashboard mb-5">
+                <div class="dashbord-quickbtn dashbord-quickbtn-single">
+                  <button class="btn-dash btn-blue btn-yellow">Redeem Honeycombs</button>
+                </div>
+              </div>
+
+              <div class="sidebar-dashboard  mb-5">
+                <ul class="dash-info">
+                  <li>
+                    <i class="fa fa-plus-circle fa-3x pull-left mr-3" aria-hidden="true"></i>
+                      <div class="pull-right">
+                      <p class="numb">Invite People</p>
+                      <p><i>Earn <b> 300 </b></i> Honeycombs</p>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+
+
+            <div class="col-md-9">
+              <nav aria-label="breadcrumb" role="navigation">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">My Dashboard</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Import Google Contacts</li>
+                </ol>
+              </nav>
+              <h2 class="pt-4">Invite People</h2>
+              <form action="" class="search-company my-3">
+                <p class="info">Insert emails separted by commans</p>
+                <div class="form-group">
+                  <div class="d-flex">
+                    <input class="form-control" placeholder="text here" type="text">
+                    <button class="btn btn-blue btn-yellow text-capitalize ml-3">Send invitations</button>
+                  </div>
+                </div>
+              </form>
+              <div class="mt-5">
+                <h2>Connect your Google contact</h2>
+                <button class="btn btn-blue btn-yellow text-capitalize mt-3">Import Contacts</button>
+              </div>
+
+
+              <table class="table table-striped my-4 ">
+                <thead class="thead-blue">
+                  <tr>
+                    <th scope="col" width="5%">
+                      <label class="custom-control custom-checkbox ">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <span class="custom-control-indicator"></span>
+                      </label>
+                    </th>
+                    <th>Contact names</th>
+                    <th>emails</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td><img class="img-thumb-contact" src="images/media/user.jpg" alt="UserName"> Name here </td>
+                    <td>email@email.com</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td><img class="img-thumb-contact" src="images/media/user.jpg" alt="UserName"> Name here </td>
+                    <td>email@email.com</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <span class="custom-control-indicator"></span>
+                      </label>
+                    </td>
+                    <td><img class="img-thumb-contact" src="images/media/user.jpg" alt="UserName"> Name here </td>
+                    <td>email@email.com</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="my-3">
+                <button class="btn btn-blue btn-yellow text-capitalize pull-right">Import Selected</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+  	</main>
+
+
+    <!-- Express Interest Model -->
+    <div class="modal fade modal-fullscreen modal-bg-white" id="expressInterestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+          <div class="modal-header">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h5 class="modal-title">Expressed interests on your project “Project name”</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form action="" class="write-review">
+            <div class="container">
+              <div class="row gray-title mb-4">
+                  <div class="col-md-4">
+                    <h3>Supplier</h3>
+                  </div>
+                  <div class="col-md-8">
+                    <h3>Company Information</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="modal-sidebar">
+                    <div class="media-body">
+                      <h5 class="mt-1 mb-2">Cloud Concept</h5>
+                      <p class="tags"><b>Industry</b>:<a href="">Manufacturing, Transportation and Warehousing</a></p>
+                      <p class="tags"><b>Specialities:</b> <span>Electrical Supplies, Sales force, Electrical Supplies, Sales force</span></p>
+                    </div>
+                    <div class="star-rating mb-3">
+                      <ul class="list-inline">
+                        <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item thumb-review"><a href="">(35 Reviews)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="modal-company">
+                    <p class="tags"><b>Company Size:</b> 15-50</p>
+                    <p class="tags"><b>About:</b></p>
+                    <p>our cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of banner ads. Since the dawn of the internet, Banner Ads have been one of the most reliable forms of web advertising.   These internet banners advertising may</p>
+                    <div class="btn-list mt-3 mb-4">
+                      <a href="" class="btn btn-sm btn-yellow-2 mr-3">Accept</a>
+                      <a href="" class="btn btn-sm btn-blue btn-yellow">Decline</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="modal-sidebar">
+                    <div class="media-body">
+                      <h5 class="mt-1 mb-2">Cloud Concept</h5>
+                      <p class="tags"><b>Industry</b>:<a href="">Manufacturing, Transportation and Warehousing</a></p>
+                      <p class="tags"><b>Specialities:</b> <span>Electrical Supplies, Sales force, Electrical Supplies, Sales force</span></p>
+                    </div>
+                    <div class="star-rating mb-3">
+                      <ul class="list-inline">
+                        <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="active list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item thumb-review"><a href="">(35 Reviews)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="modal-company">
+                    <p class="tags"><b>Company Size:</b> 15-50</p>
+                    <p class="tags"><b>About:</b></p>
+                    <p>our cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of banner ads. Since the dawn of the internet, Banner Ads have been one of the most reliable forms of web advertising.   These internet banners advertising may</p>
+                    <div class="btn-list mt-3 mb-4">
+                      <a href="" class="btn btn-sm btn-yellow-2 mr-3">Accept</a>
+                      <a href="" class="btn btn-sm btn-blue btn-yellow">Decline</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Express Interest Model -->
+
+
+
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9">
+            <h6 class="mb-3">What is SMBeez</h6>
+            <p>SMBeez is your local online marketplace for small and medium companies keen to do business with you. Source project opportunities and find reliable suppliers easily from the comfort of your office. Confidently do business with trusted... <a href="">more</a></p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="mb-3">Stay in touch</h6>
+            <form action="" class="newsletter">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail">
+                <span class="input-group-btn">
+                  <button class="btn btn-blue btn-yellow" type="button"><i class="fa fa-check" aria-hidden="true"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Links</h6>
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Sign Up</a></li>
+              <li><a href="">Add your company</a></li>
+              <li><a href="">Publish your project</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Listing</h6>
+            <ul>
+              <li><a href="">Companies</a></li>
+              <li><a href="">Projects</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Projects</h6>
+            <ul>
+              <li><a href="">Agriculture, Fishing,</a></li>
+              <li><a href="">and Food Services</a></li>
+              <li><a href="">Oil, Gas, and Mining</a></li>
+              <li><a href="">Utilities and Waste </a></li>
+              <li><a href="">Management</a></li>
+              <li><a href="">All Industries</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Locations</h6>
+            <ul>
+              <li><a href="">Dubai</a></li>
+              <li><a href="">Abu Dhabi</a></li>
+              <li><a href="">Cairo</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-12">
+            <p>Made by Cloud Concept © 2017 - All Rights Reserved </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <div id="search" class="cd-main-search">
+      <form>
+        <input type="search" placeholder="Search...">
+      </form>
+      <a href="#" class="close cd-text-replace">Close Form</a>
+    </div> <!-- .cd-main-search -->
+
+
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/scrollreveal/dist/scrollreveal.js"></script>
+    <script src="/bower_components/jquery-bar-rating/jquery.barrating.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
