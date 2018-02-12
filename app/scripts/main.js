@@ -103,7 +103,10 @@ jQuery(document).ready(function($){
     theme: 'fontawesome-stars'
   });
 
-
+  // tooltips
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
 
 
 
@@ -185,7 +188,7 @@ jQuery(document).ready(function($){
 
   // Scroll Animation
     if ($('body').hasClass('home')) {
-    window.sr = ScrollReveal({ reset: true });
+    window.sr = ScrollReveal({ reset: false });
       sr.reveal('.home .hero h1', {
         opacity: 0,
         distance: '10rem',
