@@ -223,6 +223,9 @@
     line-height: 1;
     border-bottom: none;
     text-decoration: none;
+    &.active {
+      font-weight: 700;
+    }
   }
   .cd-main-nav a:hover {
     opacity: .6;
