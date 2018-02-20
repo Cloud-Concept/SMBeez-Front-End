@@ -158,12 +158,18 @@ Add Project
 Custom File Name
 */
 
+.custom-file-input{
+  cursor: pointer;
+}
+
 .custom-file-control:lang(en):empty::after{
   content: attr(data-label);
+  color: $placeholder;
 }
 
 .custom-file-control.selected:lang(en):after {
   content: "" !important;
+
 }
 
 
