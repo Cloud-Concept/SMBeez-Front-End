@@ -1,0 +1,340 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMBeez : Dashboard Company Edit</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <script src="https://use.fontawesome.com/7305a65f5a.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body class="no-hero">
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="cd-main-header animate-search">
+      <div class="cd-logo"><a href="#"><img src="images/common/logo.svg" alt="Logo"></a></div>
+
+      <nav class="cd-main-nav-wrapper">
+        <a href="#search" class="cd-search-trigger"></a>
+        <ul class="cd-main-nav">
+          <li><a href="#">Companies</a></li>
+          <li><a href="#">Projects</a></li>
+          <li class="no-effect">
+            <a href="#"><span class="flag-icon flag-icon-ae"></span> Dubai</a>
+          </li>
+          <li class="nav-item dropdown usernav">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/media/user.jpg" alt="UserName"></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+        </ul> <!-- .cd-main-nav -->
+      </nav> <!-- .cd-main-nav-wrapper -->
+      <a href="#" class="cd-nav-trigger cd-text-replace">Menu<span></span></a>
+    </header>
+
+
+    <nav class="dashboard-nav navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent2">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="">Published projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Projects applied</a></li>
+        <li class="nav-item"><a class="nav-link" href="">My company</a></li>
+        <li class="nav-item"><a class="nav-link" href="">bookmarks</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Settings</a></li>
+      </ul>
+    </div>
+    </nav>
+
+  	<main class="cd-main-content">
+  		<!-- your content here -->
+      <section class="dashboard compnay-edit">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="sidebar-company-logo border-0 d-flex justify-content-between pb-2">
+                <img src="/images/media/logo.jpg" alt="" class="company-logo">
+              </div>
+
+              <div class="form-group">
+                 <label class="custom-file">
+                      <input type="file" id="logo_url" name="logo_url" class="custom-file-input" accept=".png, .jpg, .jpeg, .bmp">
+                      <span class="custom-file-control" data-label="Upload Logo"></span>
+                  </label>
+              </div>
+
+
+              <div class="sidebar-dashboard mt-5">
+                <div class="sidebar-company-logo border-0 d-flex justify-content-between pb-2">
+                  <img src="/images/media/media-01.jpg" alt="" class="company-logo">
+                </div>
+                <div class="form-group">
+                    <label class="custom-file">
+                        <input type="file" name="cover_url" class="custom-file-input" accept=".png, .jpg, .jpeg, .bmp">
+                        <span class="custom-file-control" data-label="Upload Cover"></span>
+                    </label>
+                </div>
+
+              </div>
+
+              <a href="" class="btn btn-sm btn-yellow-2 mt-3">Save</a>
+            </div>
+            <div class="col-md-6">
+              <nav aria-label="breadcrumb" role="navigation">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">My Dashboard</a></li>
+                  <li class="breadcrumb-item" >My Company</li>
+                  <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                </ol>
+              </nav>
+
+              <div class="dashboard-company-block">
+
+                    <div class="media-body ">
+                      <h5 class="mt-1 mb-2">Cloud Concept</h5>
+                      <p class="tags"><b>Industry</b>: <a href="">Manufacturing, Transportation and Warehousing</a></p>
+                      <p class="tags"><b>Specialities:</b> <span>Electrical Supplies, Sales force, Electrical Supplies, Sales force</span></p>
+                    </div>
+
+
+
+
+                  <h4>Company Brief</h4>
+                  <textarea class="form-control mb-3">Adwords Keyword research for beginners   When you embark on your first PPC journey, you need to keep a small number of keywords at first. Keyword lists that are thousands of words long should be left to the more experienced PPC marketer.</textarea>
+                  <a href="" class="btn btn-sm btn-yellow-2">Save</a>
+
+                </div>
+
+              <div class="dashboard-company-block my-3">
+                <table class="table ">
+                  <thead class="thead-blue">
+                    <tr>
+                      <th scope="col" colspan="2">Basic information</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row"><b>Company name</b></td>
+                        <td><input type="text" class="form-control" placeholder="Text here"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><b>Company Tag Line</b></td>
+                      <td><input type="text" class="form-control" placeholder="Text here"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><b>Website</b></td>
+                      <td><input type="text" class="form-control" placeholder="Text here"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><b>Email</b></td>
+                      <td><input type="text" class="form-control" placeholder="Text here"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><b>Phone</b></td>
+                      <td><input type="text" class="form-control" placeholder="Text here"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><b>LinkedIn Profile</b></td>
+                      <td><input type="text" class="form-control" placeholder="Text here"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><b>Company Size</b></td>
+                      <td><input type="text" class="form-control" placeholder="Text here"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><b>Year Founded</b></td>
+                      <td><input type="text" class="form-control" placeholder="Text here"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><b>Company Type</b></td>
+                      <td><input type="text" class="form-control" placeholder="Text here"></td>
+                    </tr>
+                  </tbody>
+
+                </table>
+
+                <a href="" class="btn btn-sm btn-yellow-2 mt-3 mb-5">Save</a>
+
+                <table class="table">
+                  <thead class="thead-blue">
+                    <tr>
+                      <th scope="col" colspan="2">Registration details </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Registration Number :</td>
+                      <td><input type="text" class="form-control" placeholder="345A-499-LLC213"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Date of Registration  :</td>
+                      <td><input type="text" class="form-control" placeholder="20/10/2005"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Upload Document</td>
+                      <td>
+                          <label class="custom-file">
+                              <input name="cover_url" class="custom-file-input" accept=".png, .jpg, .jpeg, .bmp" type="file">
+                              <span class="custom-file-control" data-label="Upload Document"></span>
+                          </label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <button type="submit" class="btn btn-sm btn-yellow-2 my-3">Save</button>
+
+
+
+
+            </div>
+            <div class="col-md-3">
+              <div class="sidebar-review-rating">
+                <div class="rating-sidebar-block">
+                <h5 class="mb-3">My reviews</h5>
+                  <div class="star-rating mb-3">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <select class="star-rating-fn">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </li>                    </ul>
+                    <a href="">(239) Reviews from customers</a>
+                  </div>
+                  <div class="star-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <select class="star-rating-fn">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </li>                    </ul>
+                    <a href="">(12) Reviews from suppliers</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+  	</main>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9">
+            <h6 class="mb-3">What is SMBeez</h6>
+            <p>SMBeez is your local online marketplace for small and medium companies keen to do business with you. Source project opportunities and find reliable suppliers easily from the comfort of your office. Confidently do business with trusted... <a href="">more</a></p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="mb-3">Stay in touch</h6>
+            <form action="" class="newsletter">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail">
+                <span class="input-group-btn">
+                  <button class="btn btn-blue btn-yellow" type="button"><i class="fa fa-check" aria-hidden="true"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Links</h6>
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Sign Up</a></li>
+              <li><a href="">Add your company</a></li>
+              <li><a href="">Publish your project</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Listing</h6>
+            <ul>
+              <li><a href="">Companies</a></li>
+              <li><a href="">Projects</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Projects</h6>
+            <ul>
+              <li><a href="">Agriculture, Fishing,</a></li>
+              <li><a href="">and Food Services</a></li>
+              <li><a href="">Oil, Gas, and Mining</a></li>
+              <li><a href="">Utilities and Waste </a></li>
+              <li><a href="">Management</a></li>
+              <li><a href="">All Industries</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Locations</h6>
+            <ul>
+              <li><a href="">Dubai</a></li>
+              <li><a href="">Abu Dhabi</a></li>
+              <li><a href="">Cairo</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-12">
+            <p>Made by Cloud Concept © 2017 - All Rights Reserved </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="search" class="cd-main-search">
+      <form>
+        <input type="search" placeholder="Search...">
+      </form>
+      <a href="#" class="close cd-text-replace">Close Form</a>
+    </div> <!-- .cd-main-search -->
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/scrollreveal/dist/scrollreveal.js"></script>
+    <script src="/bower_components/jquery-bar-rating/jquery.barrating.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
