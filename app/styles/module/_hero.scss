@@ -110,6 +110,10 @@ Company Details hero
   width: 100%;
   @include rem(padding-top, 20px);
   background:  url(../images/media/company-banner-details.png) no-repeat right bottom;
+
+  h1 {
+    @include rem(font-size, $h4-font-size + 5);
+  }
 }
 
 .hero-shadow {
