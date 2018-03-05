@@ -92,14 +92,17 @@ jQuery(document).ready(function($){
 
 
   // Star Rating
+  //$('.star-rating-fn').barrating('destroy');
   $('.star-rating-fn').barrating({
-    theme: 'fontawesome-stars'
+    theme: 'fontawesome-stars',
+    emptyValue: 0
   });
 
   // Star Rating ReadOnly
   $('.star-rating-ro').barrating({
     readonly: true,
     hoverState: false,
+    emptyValue: 0,
     theme: 'fontawesome-stars'
   });
 
