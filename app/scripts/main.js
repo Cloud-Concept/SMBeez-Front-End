@@ -1,5 +1,12 @@
 jQuery(document).ready(function($){
 
+  // Date Picker
+  $.fn.datepicker.defaults.format = 'dd/mm/yyyy';
+  $.fn.datepicker.defaults.autoclose = true;
+  $('.datepicker').datepicker({
+      startDate: '-3d'
+  });
+
   // Main Nav & Search
 	var resizing = false,
 		navigationWrapper = $('.cd-main-nav-wrapper'),
@@ -91,12 +98,14 @@ jQuery(document).ready(function($){
 	});
 
 
+
   // Star Rating
   //$('.star-rating-fn').barrating('destroy');
   $('.star-rating-fn').barrating({
     theme: 'fontawesome-stars',
     emptyValue: 0
   });
+
 
   // Star Rating ReadOnly
   $('.star-rating-ro').barrating({
