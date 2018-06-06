@@ -107,3 +107,18 @@ Modal
     display: block;
   }
 }
+
+// Call center
+.modal-call {
+  .modal-title {
+    margin: -7px 0 2px 0;
+    text-transform: inherit;
+    span {
+      font-weight: 400;
+      font-size: 12px;
+    }
+    i {
+      @include rem(margin-right, 5px );
+    }
+  }
+}

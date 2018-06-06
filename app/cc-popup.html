@@ -1,0 +1,292 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMBeez : Call Center : Popups</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+  <link rel="stylesheet" href="/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <script src="https://use.fontawesome.com/7305a65f5a.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body class="no-hero">
+  <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="row">
+    <div class="col-md-6 mrt-auto my-5">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="" data-toggle="modal" data-target="#popup-01">Edit Company</a></li>
+        <li class="list-group-item"><a href="" data-toggle="modal" data-target="#popup-02">Send Message</a></li>
+        <li class="list-group-item"><a href="" data-toggle="modal" data-target="#popup-03">Report</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <!-- Popup 01 -->
+  <div class="modal fade modal-fullscreen modal-call" id="popup-01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h5 class="modal-title"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Company <span>(Company Name)</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>1. Edit Company Details</h2>
+                <div class="alert alert-success alert-green alert-dismissible fade show" role="alert">
+                  <h3><i class="fa fa-check fa-2x" aria-hidden="true"></i> Saved Successfully</h3>
+                </div>
+                <form action="" class="call-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Company Name">
+                    <label class="custom-control single-label">City, Country</label>
+                  </div>
+                  <div class="form-group">
+                    <label class="custom-control">Specialities</label>
+                    <textarea name="" class="form-control" placeholder="Add some tags to describe the company"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label class="custom-control">Company email</label>
+                    <input type="text" class="form-control" placeholder="Company email">
+                  </div>
+                  <div class="form-group">
+                    <label class="custom-control">Phone</label>
+                    <input type="text" class="form-control" placeholder="+20 - 012 7799 4984">
+                  </div>
+                  <div class="form-group">
+                    <label class="custom-control">Company Address</label>
+                    <input type="text" class="form-control" placeholder="815 Corwin Lodge Apt. 578">
+                  </div>
+                  <button href="" class="btn btn-blue btn-yellow pull-right">Save Details</button>
+                </form>
+              </div>
+
+              <div class="col-md-6">
+                <h2>2. Assign Company to a User</h2>
+                <div class="alert alert-success alert-green alert-dismissible fade show" role="alert">
+                  <h3><i class="fa fa-check fa-2x" aria-hidden="true"></i> User Created Successfully</h3>
+                  <p>An email will be sent to the user to complete the login process.</p>
+                </div>
+                <form action="" class="call-form">
+                  <div class="form-group-verify">
+                    <div class="from-group">
+                      <label class="custom-control">Existing User</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="User Email" aria-label="User Email" aria-describedby="basic-addon1">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="from-group mt-3">
+                    <button class="btn btn-sm btn-yellow-2 pull-left">Verify User</button>
+                    <p class="verify pull-left ml-3">( Verified )</p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="custom-control">New User</label>
+                    <input type="text" class="form-control" placeholder="New User">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last User">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email User">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone">
+                  </div>
+                  <div class="form-group">
+                    <label class="custom-control">Company Name</label>
+                    <input type="text" class="form-control" placeholder="Company Name">
+                  </div>
+                  <div class="form-group">
+                    <label class="custom-control">Company Role</label>
+                    <select class="form-control custom-select d-block" required="">
+                      <option value="2col">Select Role</option>
+                      <option value="21">One</option>
+                      <option value="22">Two</option>
+                      <option value="23">Three</option>
+                    </select>
+                  </div>
+
+                  <button href="" class="btn btn-blue btn-yellow pull-right">Create User</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Popup 01 -->
+
+
+  <!-- Popup 02 -->
+  <div class="modal fade modal-fullscreen modal-call" id="popup-02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h5 class="modal-title"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send Message <span>(Company Name)</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7 mrt-auto">
+                <h2>1. Edit Company Details</h2>
+                <div class="alert alert-success alert-green alert-dismissible fade show" role="alert">
+                  <h3><i class="fa fa-check fa-2x" aria-hidden="true"></i> Message Sent Successfully </h3>
+                </div>
+                <form action="" class="call-form">
+                  <div class="form-group">
+                    <p><b>Company name</b>
+                      <br />
+                    <label class="custom-control single-label">City, Country</label>
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label class="custom-control">Subject</label>
+                    <select class="custom-select  mb-sm-0 w-100">
+                      <option selected="">Subject type</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>                  </div>
+                  <div class="form-group">
+                    <label class="custom-control">User Email</label>
+                    <input type="text" class="form-control" placeholder="Company email">
+                  </div>
+                  <div class="form-group">
+                    <label class="custom-control">Message Body</label>
+                    <textarea name="" class="form-control" placeholder=""></textarea>
+                  </div>
+
+                  <button href="" class="btn btn-blue btn-yellow pull-right">Send</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Popup 02 -->
+
+  <!-- Popup 02 -->
+  <div class="modal fade modal-fullscreen modal-call" id="popup-03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h5 class="modal-title"><i class="fa fa-list" aria-hidden="true"></i> Report <span>(Company Name)</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7 mrt-auto">
+                <h2>1. Edit Company Details</h2>
+                <div class="alert alert-success alert-green alert-dismissible fade show" role="alert">
+                  <h3><i class="fa fa-check fa-2x" aria-hidden="true"></i> Saved Successfully  </h3>
+                </div>
+                <form action="" class="call-form">
+                  <div class="form-group">
+                    <label class="custom-control">Status</label>
+                    <select class="custom-select  mb-sm-0 w-100">
+                      <option selected="">Subject Status</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="custom-control">Additional Comments</label>
+                    <textarea name="" class="form-control" placeholder=""></textarea>
+                  </div>
+                  <button href="" class="btn btn-blue btn-yellow pull-right">Save Status</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Popup 02 -->
+
+
+
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/scrollreveal/dist/scrollreveal.js"></script>
+  <script src="/bower_components/jquery-bar-rating/jquery.barrating.js"></script>
+  <script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
