@@ -935,6 +935,7 @@ JavaScript Disabled
 
   .btn-menu {
     a {
+      @include mq(lg2) {
       border: 1px solid $gray;
       border-radius: 4px;
       @include transition(all .4s ease);
@@ -944,6 +945,7 @@ JavaScript Disabled
         background: $main-blue;
         color: $white;
       }
+    }
     }
   }
 }
@@ -957,10 +959,14 @@ JavaScript Disabled
 // badge icon
 .badge-top {
   margin: 2px 5px 0 0 ;
+  .fa-stack{
+    width: 30px;
+  }
   .fa-stack[data-count]:after{
     position:absolute;
     left:50%;
     top:1%;
+    z-index: 1;
     content: attr(data-count);
     font-size: 10px;
     padding:.5em .6em;
@@ -974,21 +980,36 @@ JavaScript Disabled
 }
 
 .center-things {
-  height: 100%;
-  top: 50%;
-  position: relative;
+  @include mq(lg2) {
+    height: 100%;
+    top: 50%;
+    position: relative;
+  }
   p {
+    top: 2px;
+    left: 0;
     margin: 0;
     background: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
     color: gray;
+    z-index: 2;
+    @include mq(lg2) {
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+
   }
   .fa-stack-1x {
     font-size: 25px;
-    color: $main-blue;
+    color: $white;
+    @include mq(lg2) {
+      color: $main-blue;
+    }
   }
+}
+
+.cd-serch-wrapper {
+  margin-top: -2px;
 }
