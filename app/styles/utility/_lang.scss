@@ -4,6 +4,7 @@
   body {
     text-align: right;
     direction: rtl;
+    font-family: $fontTaj;
   }
 
   ul {
@@ -115,5 +116,60 @@
 
   .custom-select {
     background-position: left .75rem center;
+  }
+
+
+  .mr-sm-2, .mx-sm-2 {
+    @include mq(sm) {
+      margin-right: 0!important;
+      margin-left: .5rem !important;
+    }
+  }
+
+  .custom-control-indicator {
+    left: inherit;
+    right: 0;
+  }
+
+  .custom-control-description {
+    @include rem(margin-right, 10px);
+    @include rem(margin-left, 0);
+  }
+  .custom-control {
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 1.5rem;
+    margin-left: 1rem;
+  }
+  .star-rating .list-inline-item.thumb-review {
+    float: right;
+  }
+  .hero-company-details {
+    text-align: left;
+  }
+  .search-block h2 span {
+    float: left;
+  }
+
+  .terms-block .row {
+    flex-direction : row-reverse;
+  }
+  .modal-fullscreen .close, .modal-signup .close {
+    right: inherit;
+    left: 5px;
+  }
+  .form-group-verify .input-group i {
+    right: inherit;
+    left: 10px;
+  }
+
+  .thumb-int {
+    font-family: $fontTaj;
+  }
+  .btn-play,
+  .search-info ,
+  h6 ,
+  .modal-title {
+    font-family: $fontSch;
   }
 }

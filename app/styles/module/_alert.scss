@@ -22,6 +22,8 @@ Alert Boxes
 .alert-dismissible {
   .close{
     @include rem(padding, 2px 7px);
+    right: inherit;
+    left: 0;
   }
 }
 
