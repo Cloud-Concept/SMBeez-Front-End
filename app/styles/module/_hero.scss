@@ -24,6 +24,9 @@ Home Page Hero
 
   &.about-hero {
     min-height: 240px;
+    h1 {
+      @include rem(padding-top, 70px);
+    }
   }
 
   p {

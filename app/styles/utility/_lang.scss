@@ -146,6 +146,13 @@
   }
   .hero-company-details {
     text-align: left;
+    h1 {
+      float: left;
+      width: 70%;
+    }
+    h2 {
+      clear: both;
+    }
   }
   .search-block h2 span {
     float: left;

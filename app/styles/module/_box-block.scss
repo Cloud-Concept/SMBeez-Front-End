@@ -4,6 +4,10 @@
     font-weight: 300;
     color: $darkblue;
 
+    &.address {
+      color: $main-blue;
+    }
+
     &.thumb-title {
       font-weight: 400;
       color: $main-blue;
