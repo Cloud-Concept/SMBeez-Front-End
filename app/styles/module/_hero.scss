@@ -7,12 +7,10 @@ Home Page Hero
 */
 
 .hero {
-  min-height: 360px;
-  background: url(../images/hero/hero-bg.jpg) no-repeat center top;
+  /*background: url(../images/hero/hero-bg.jpg) no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
-
-
+  */
 
   .hero-bg {
     width: 100%;
@@ -30,10 +28,10 @@ Home Page Hero
   }
 
   p {
-    @include rem(font-size, $h4-font-size);
+    @include rem(font-size, $h2-font-size);
   }
   .btn-hero {
-    @include rem(padding, 30px 0);
+    @include rem(padding, 10px 0);
     > span {
       @include rem(margin, 10px 20px 0);
       font-style: italic;
@@ -44,7 +42,7 @@ Home Page Hero
       a {
         display: block;
         float: none;
-        width: 80%;
+        width: 60%;
         @include rem(margin, 5px auto);
 
         @include mq(sm) {
@@ -148,4 +146,39 @@ All Project Industries
   background: url(../images/hero/hero-all.jpg) no-repeat 0 0;
   background-size: cover;
 
+}
+
+
+.homepage {
+  .arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    margin-left: -35px;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: $light-gray;
+    border-radius: 50%;
+    z-index: 100;
+    color: $main-blue;
+      @include transition(all .4s ease);
+    &:hover {
+      background: $yellow;
+      color: $black;
+    }
+  }
+  .here-center {
+    background: none;
+    @include rem(padding-bottom, 30px);
+
+    h1,p{
+      color: $white;
+    }
+  }
 }

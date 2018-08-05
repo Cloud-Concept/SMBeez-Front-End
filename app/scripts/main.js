@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
 
   // Date Picker
-  $.fn.datepicker.defaults.format = 'dd/mm/yyyy';
+  $.fn.datepicker.defaults.format = 'mm/dd/yyyy';
   $.fn.datepicker.defaults.autoclose = true;
   $('.datepicker').datepicker({
       startDate: '-3d'
@@ -199,6 +199,8 @@ jQuery(document).ready(function($){
     });
 
   // Scroll Animation
+
+
     if ($('body').hasClass('home')) {
     window.sr = ScrollReveal({ reset: false });
       sr.reveal('.home .hero h1', {
@@ -244,4 +246,5 @@ jQuery(document).ready(function($){
         origin: 'bottom'
       });
   }
+
 });
