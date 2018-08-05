@@ -15,17 +15,17 @@
 }
 
 
+.home {
+  overflow-x: hidden;
+}
 // animation rest @ start
 .home .hero h1,
 .home .hero p,
 .home .btn-hero,
-.home .featured-companies h3,
-.home .featured-projects h3,
-.home .sidebar-01,
-.home .sidebar-02,
+.home .featured-block h3,
 .home .footer,
-.home .company-box,
-.home .project-box,
+.home .box-block-into,
+.home .arrow-down,
 .home .create-intro {
   transform: scale(0,0);
 }

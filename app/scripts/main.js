@@ -203,14 +203,14 @@ jQuery(document).ready(function($){
 
     if ($('body').hasClass('home')) {
     window.sr = ScrollReveal({ reset: false });
-      sr.reveal('.home .hero h1', {
+      sr.reveal('.home .here-center h1', {
         opacity: 0,
         distance: '10rem',
         duration: 2000,
         scale: 1,
         origin: 'top'
       });
-      sr.reveal('.home .hero p', {
+      sr.reveal('.home .here-center p', {
         opacity: 0,
         duration: 2000,
         origin: 'top'
@@ -223,22 +223,35 @@ jQuery(document).ready(function($){
         scale: 1,
         origin: 'bottom'
       });
-
-      sr.reveal('.home .featured-companies h3, .home .featured-projects h3', {
+      sr.reveal('.home .img-fluid', {
+        opacity: 0,
+        distance: '10rem',
+        duration: 2000,
+        scale: 1,
+        origin: 'left'
+      });
+      sr.reveal('.home .arrow-down', {
+        opacity: 0,
+        distance: '10rem',
+        duration: 1000,
+        scale: 1,
+        origin: 'top'
+      });
+      sr.reveal('.home .featured-block h2, .home .featured-block p, .home .featured-block .btn', {
         opacity: 0,
         distance: '10rem',
         duration: 1000,
         scale: 1,
         origin: 'bottom'
       });
-      sr.reveal('.home .sidebar-01, .home .sidebar-02, .home .footer', {
+      sr.reveal('.home .box-block-into, .home .box-block-into h3, .home .box-block-into p, .home .box-block-into .btn, .home .box-block-into a', {
         opacity: 0,
         distance: '10rem',
         duration: 2000,
         scale: 1,
         origin: 'bottom'
       });
-      sr.reveal('.home .company-box, .home .project-box, .home .create-intro', {
+      sr.reveal('.home .company-box, .home .footer', {
         opacity: 0,
         distance: '10rem',
         duration: 1500,
