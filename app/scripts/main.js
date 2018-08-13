@@ -1,9 +1,11 @@
 jQuery(document).ready(function($){
 
   // Date Picker
-  $.fn.datepicker.defaults.format = 'mm/dd/yyyy';
+  $.fn.datepicker.defaults.format = 'dd/mm/yyyy';
   $.fn.datepicker.defaults.autoclose = true;
+  $.fn.datepicker.defaults.orientation = 'right bottom',
   $('.datepicker').datepicker({
+
       startDate: '-3d'
   });
 

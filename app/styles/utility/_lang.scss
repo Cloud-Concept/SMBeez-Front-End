@@ -6,7 +6,9 @@
     direction: rtl;
     font-family: $fontTaj;
   }
-
+  .pagination {
+    font-family: $fontrobo;
+  }
 
   ul {
     padding-right: 0;
@@ -43,7 +45,7 @@
     //flex-direction : row-reverse;
   }
 
-  .dropdown-menu {
+  .dropdown-menu:not(.datepicker) {
     text-align: right;
     right: 0!important;
     left: inherit!important;
@@ -117,6 +119,7 @@
 
   .custom-select {
     background-position: left .75rem center;
+    padding: .375rem .75rem .375rem 1.75rem;
   }
 
 
@@ -145,6 +148,7 @@
   .star-rating .list-inline-item.thumb-review {
     float: right;
   }
+
   .hero-company-details {
     text-align: left;
     h1 {
@@ -153,6 +157,11 @@
     }
     h2 {
       clear: both;
+    }
+    .star-rating .list-inline-item.thumb-review {
+      float: left;
+      margin-left: 0;
+      margin-right: 0.5rem;
     }
   }
   .search-block h2 span {
@@ -198,4 +207,6 @@
       }
     }
   }
+
+
 }

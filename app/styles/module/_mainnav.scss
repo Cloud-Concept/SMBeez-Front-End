@@ -216,10 +216,10 @@
     display: inline-block;
     float: left;
     height: 100%;
-    padding: 1.5em .4em;
+    padding: 1.3em .4em;
   }
   .cd-main-nav a {
-    padding: .625em .8em;
+    padding: .625em .8em 0;
     line-height: 1;
     border-bottom: none;
     text-decoration: none;
@@ -623,8 +623,8 @@ Search Form
     z-index: 3;
     height: 40px;
     width: 40px;
-    margin: 1.25em 0 ;
-    top: 0;
+    margin: 1.25em 0 0;
+    top: -2px;
     float: right;
     cursor: pointer;
     -webkit-transition: -webkit-transform 0.3s;
@@ -964,14 +964,17 @@ JavaScript Disabled
 
 // badge icon
 .badge-top {
-  margin: 2px 5px 0 0 ;
+  margin: 4px 0 0 5px ;
+
+
+
   .fa-stack{
     width: 30px;
   }
   .fa-stack[data-count]:after{
     position:absolute;
-    left:50%;
-    top:1%;
+    right:50%;
+    top:10px;
     z-index: 1;
     content: attr(data-count);
     font-size: 10px;
@@ -986,23 +989,29 @@ JavaScript Disabled
 }
 
 .center-things {
+  font-family: arial;
   @include mq(lg2) {
     height: 100%;
     top: 50%;
     position: relative;
   }
   p {
-    top: 2px;
-    left: 0;
+    top: -4px;
+    left: 5px;
     margin: 0;
     background: none;
     position: absolute;
     color: gray;
     z-index: 2;
+    @include mq(md) {
+
+
+    }
+
     @include mq(lg2) {
       top: 50%;
       left: 50%;
-      margin-right: -50%;
+      margin-left: -50%;
       transform: translate(-50%, -50%);
     }
 
@@ -1010,9 +1019,7 @@ JavaScript Disabled
   .fa-stack-1x {
     font-size: 25px;
     color: $white;
-    @include mq(lg2) {
-      color: $main-blue;
-    }
+
   }
 }
 

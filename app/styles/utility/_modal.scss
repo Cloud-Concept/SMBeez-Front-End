@@ -51,8 +51,11 @@ Modal
     @include transition(all .4s ease);
 
     &:hover{
-
       background: $darkblue;
+    }
+
+    span {
+      line-height: 43px;
     }
   }
 }

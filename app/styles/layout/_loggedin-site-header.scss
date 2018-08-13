@@ -4,6 +4,15 @@ Logged In Header
 
 .cd-main-nav {
   .usernav {
+
+    .dropdown-menu {
+      background: $deepgray;
+    }
+
+    .dropdown-toggle::after {
+      border-top-color: $star-yellow;
+    }
+
     @include rem(padding, 0);
     @include mq(lg2) {
       @include rem(padding-top, 7px);
