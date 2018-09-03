@@ -206,5 +206,22 @@
     }
   }
 
+  .custom-file-control:empty::after{
+    content: attr(data-label);
+    color: $placeholder;
+  }
 
+  .custom-file-control.selected:after {
+    content: "" !important;
+  }
+  .custom-file-control:lang(ar)::before {
+    content: "تصفح";
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .custom-file-control::before {
+    left: -1px;
+    right: auto;
+    border-radius: .25rem 0 0 .25rem;
+  }
 }

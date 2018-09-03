@@ -129,7 +129,7 @@ jQuery(document).ready(function($){
   // input files
 
     $('.custom-file-input').on('change',function(){
-      $(this).next().after().text($(this).val().split('\\').slice(-1)[0])
+      $(this).next().after().text($(this).val().split('\\').slice(-1)[0]);
     })
 
 
@@ -261,5 +261,16 @@ jQuery(document).ready(function($){
         origin: 'bottom'
       });
   }
+
+
+
+  // smooth Scroll
+  $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+      }, 800);
+  });
+
 
 });
