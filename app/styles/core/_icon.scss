@@ -6,3 +6,17 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
+.fa-user-placeholder{
+  color: $gray;
+  font-size: 12rem;
+  line-height: 219px;
+
+  @include mq(md){
+    line-height: 191px;
+  }
+  @include mq(xl){
+    line-height: 233px;
+  }
+}
