@@ -22,3 +22,14 @@ Company Details Page SideBar
       }
     }
 }
+
+.vcard-list li {
+  span[data-replace]{
+      cursor: pointer;
+      .fa {
+        margin-left: 0px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+  }
+}

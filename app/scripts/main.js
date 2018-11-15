@@ -262,15 +262,21 @@ jQuery(document).ready(function($){
       });
   }
 
-
+  //Phone number show
+  $('body').delegate('span[data-replace]', 'click', function(e){
+    e.preventDefault();
+    $(this).html($(this).attr('data-replace'));
+  });
 
   // smooth Scroll
   $(document).on('click', 'a[href^="#"]', function (event) {
       event.preventDefault();
       $('html, body').animate({
-          scrollTop: $($.attr(this, 'href')).offset().top
+          scrollTop: $($.attr(this, 'href')).offset()
       }, 800);
   });
+
+
 
 
 });
