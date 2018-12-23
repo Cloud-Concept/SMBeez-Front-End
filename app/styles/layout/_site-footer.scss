@@ -20,7 +20,7 @@
     list-style: none;
 
     li {
-      @include rem(padding-bottom, 10px);
+      @include rem(padding-bottom, 1px);
     }
 
     a {

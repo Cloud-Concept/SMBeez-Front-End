@@ -133,11 +133,30 @@ New Box block
   border-radius: 0;
 }
 
-
-/* About Team Box */
+/* Partners Page Box */
 .team-box {
   h3,
   p {
     text-align: right;
+  }
+
+  .img-hover {
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+/* About Team Box */
+
+.rightcol {
+  direction: ltr;
+  .team-box {
+    h3,
+    p {
+      text-align: left;
+    }
+
+    .img-hover {
+      border-radius: 5px 5px 0 0;
+    }
   }
 }
