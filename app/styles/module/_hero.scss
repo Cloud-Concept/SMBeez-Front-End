@@ -50,6 +50,10 @@ Home Page Hero
           width: auto;
           display: inline-block;
         }
+
+        @include mq(sm) {
+          @include rem(margin-left, 20px);
+        }
     }
   }
 }
