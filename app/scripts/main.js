@@ -277,6 +277,12 @@ jQuery(document).ready(function($){
   });
 
 
-
+  // auto close Trips
+  $(".alert-secondary").fadeTo(5000, 500).slideUp(500, function(){
+      $(".alert-secondary").slideUp(500);
+  });
 
 });
+
+
+///
