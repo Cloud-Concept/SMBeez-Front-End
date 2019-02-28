@@ -1,0 +1,8 @@
+.dashboard-profile{
+  h3 {
+    @include rem(margin-bottom, 10px);
+  }
+  p {
+      @include rem(font-size, $base-font-size - 3);
+  }
+}
