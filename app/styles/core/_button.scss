@@ -18,10 +18,11 @@ button:hover,
   position: relative;
   border-radius: $br01;
   text-transform: uppercase;
-  @include rem(font-size, $base-font-size);
-  @include rem(padding, 15px 30px);
+  @include rem(font-size, $base-font-size - 4px);
+  @include rem(padding, 10px 20px);
   @include transition(all .4s ease);
   font-weight: 700;
+
 }
 
 .btn-dash {
@@ -57,8 +58,8 @@ button:hover,
 .btn-sm {
   text-transform: inherit;
   border-radius: $br01 - 6;
-  @include rem(font-size, $base-font-size);
-  @include rem(padding, 4px 15px);
+  @include rem(font-size, $base-font-size - 6);
+  @include rem(padding, 6px 15px);
 }
 
 .btn-blue {

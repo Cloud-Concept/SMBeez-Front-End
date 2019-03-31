@@ -10,6 +10,10 @@ Tabs Global
     color: $main-blue;
   }
 
+  .btn-sm {
+    @include rem(margin-top, 7px);
+  }
+
 }
 
 /* Tabs Case for Responsive */
