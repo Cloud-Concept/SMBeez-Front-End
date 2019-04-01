@@ -225,3 +225,10 @@
     border-radius: .25rem 0 0 .25rem;
   }
 }
+
+:lang(en){
+  .nav-tabs .nav-item.ml-auto {
+    margin-left: 0!important;
+    margin-right: auto!important;
+  }
+}
